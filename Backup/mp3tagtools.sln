@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mp3tagtools", "mp3tagtools.vcxproj", "{989B17E1-97A5-461A-885C-E5C33D57726D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Template|Win32 = Template|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{989B17E1-97A5-461A-885C-E5C33D57726D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{989B17E1-97A5-461A-885C-E5C33D57726D}.Debug|Win32.Build.0 = Debug|Win32
+		{989B17E1-97A5-461A-885C-E5C33D57726D}.Release|Win32.ActiveCfg = Release|Win32
+		{989B17E1-97A5-461A-885C-E5C33D57726D}.Release|Win32.Build.0 = Release|Win32
+		{989B17E1-97A5-461A-885C-E5C33D57726D}.Template|Win32.ActiveCfg = Release|Win32
+		{989B17E1-97A5-461A-885C-E5C33D57726D}.Template|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

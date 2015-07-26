@@ -1,0 +1,942 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\mp3tagtools.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\mp3tagtools.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MP3TAGTOOLS_DIALOG DIALOGEX 0, 0, 506, 321
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Mp3 Tag Tools v1.2"
+MENU IDR_MAINDLG_MENU
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Refresh List",IDC_REFRESH_BUTTON,3,305,50,14
+    PUSHBUTTON      "Directory",IDC_DIR_BUTTON,64,305,50,14
+    PUSHBUTTON      "Write Tags",IDC_WRITETAGS_BUTTON,126,305,50,14
+    PUSHBUTTON      "Rename Files",IDC_RENAMEFILES_BUTTON,188,305,50,14
+    PUSHBUTTON      "Exit",IDC_EXIT_BUTTON,251,305,50,14
+    PUSHBUTTON      "Remove Tags",IDC_REMOVE_BUTTON,314,305,50,14
+    PUSHBUTTON      "Clean Filenames",IDC_CLEAN_FILENAMES_BUTTON,377,305,54,14
+    PUSHBUTTON      "Create Directory",IDC_CREATEDIR_BUTTON,446,305,56,14
+    PUSHBUTTON      "Format Options",IDC_CUSTOMFORMAT_BUTTON,440,247,56,14,BS_FLAT
+    CONTROL         "Use Filename Format",IDC_CUSTOM_FORMATCHK,"Button",BS_AUTOCHECKBOX | BS_FLAT,258,250,82,10
+    COMBOBOX        IDC_FILENAMEFORMAT_COMBO,258,265,238,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Use Directory Format",IDC_DIROPTION_CHECK,"Button",BS_AUTOCHECKBOX | BS_FLAT,258,284,82,10
+    COMBOBOX        IDC_DIRFORMAT_COMBO,347,283,149,57,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Tab1",IDC_TAGINFO_TAB,"SysTabControl32",TCS_BUTTONS | TCS_FOCUSNEVER | 0x8,9,173,232,125
+    GROUPBOX        "Choose the Custom Format for Write Tags / Rename Files",IDC_TAGFORMAT_STATIC,251,237,251,66
+    CONTROL         "Progress1",IDC_PROGRESSBAR,"msctls_progress32",PBS_SMOOTH,258,177,217,9
+    GROUPBOX        "MPEG info",IDC_MPEGINFO_STATIC,251,192,251,43
+    LTEXT           "0%",IDC_PERCENT_STATIC,479,177,19,9
+    GROUPBOX        "Status:",IDC_STATUS_STATIC,251,167,251,24
+    GROUPBOX        "",IDC_TAGINFO_STATIC,3,167,244,136,0,WS_EX_TRANSPARENT
+    GROUPBOX        "",IDC_LISTVIEWMARKER_STATIC,3,0,500,167
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 281, 227
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Mp3 Tag Tools"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "E-Mail: xeonfusion@users.sourceforge.net",IDC_STATICURL_EMAIL,93,42,134,8
+    LTEXT           "http://sourceforge.net/projects/massid3lib",IDC_STATICURL_PROJECTPAGE,93,75,134,8
+    LTEXT           "http://sourceforge.net/projects/massid3lib",IDC_STATIC,93,103,155,8
+    LTEXT           "http://sourceforge.net/project/?group_id=979",IDC_STATICURL_ID3LIB,93,121,146,8
+    LTEXT           "http://massid3lib.sourceforge.net",IDC_STATICURL_HOME,93,144,105,8
+    DEFPUSHBUTTON   "OK",IDOK,115,198,50,14,WS_GROUP
+    GROUPBOX        "About Mp3 Tag Tools",IDC_STATIC,7,7,267,212
+    LTEXT           "Mp3 Tag Tools v1.2 Build 010",IDC_STATIC,73,20,112,8
+    LTEXT           "GNU GPL Free Software",IDC_STATIC,73,54,105,8
+    LTEXT           "Supports ID3v1.1, ID3v2.x Tag operations",IDC_STATIC,73,85,192,8
+    LTEXT           "Uses: massid3lib (C) 2004 John George K. for ID3v1.1",IDC_STATIC,73,94,182,8
+    ICON            IDR_MAINFRAME,IDC_STATIC,23,20,20,20
+    LTEXT           "Copyright (C) 2015 John George K.",IDC_STATIC,73,31,115,8
+    LTEXT           "Project Page:",IDC_STATIC,73,65,44,8
+    LTEXT           "Home Page:",IDC_STATIC,73,133,40,8
+    LTEXT           "Thanks to:",IDC_STATIC,73,153,39,8
+    LTEXT           "SourceForge.net",IDC_STATIC,93,164,55,8
+    LTEXT           "Paul DiLascia",IDC_STATIC,156,164,49,8
+    LTEXT           "Valery Kondakoff",IDC_STATIC,93,184,60,8
+    LTEXT           "Paul Wendt",IDC_STATIC,93,174,43,8
+    LTEXT           "id3libv3.8.3 (C) for ID3v2.x",IDC_STATIC,93,112,137,8
+    LTEXT           "Michael Dunn",IDC_STATIC,219,164,45,8
+    LTEXT           "Chris Losinger",IDC_STATIC,219,174,45,8
+    LTEXT           "Eugene Offroad",IDC_STATIC,156,174,51,8
+END
+
+IDD_LYRICS_DIALOG DIALOG 0, 0, 238, 116
+STYLE DS_SETFONT | WS_CHILD | WS_CLIPSIBLINGS
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_LYRICS_EDIT,7,7,224,102,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_ID3V2_DIALOG DIALOG 0, 0, 235, 126
+STYLE DS_SETFONT | WS_CHILD | WS_CLIPSIBLINGS
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_TITLE_EDIT,45,7,171,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ARTIST_EDIT,45,22,171,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ALBUM_EDIT,45,37,171,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_YEAR_EDIT,45,52,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_GENRE_COMBO,115,52,101,75,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_COMMENT_EDIT,45,68,171,25,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
+    EDITTEXT        IDC_TRACK_EDIT,45,96,25,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Case",IDC_CORRECT_BUTTON,88,97,25,14,BS_FLAT
+    PUSHBUTTON      "Empty",IDC_EMPTY_BUTTON,116,97,32,14,BS_FLAT
+    PUSHBUTTON      "All",IDC_ALL_BUTTON,151,97,21,14,BS_FLAT
+    PUSHBUTTON      "None",IDC_NONE_BUTTON,175,97,25,14,BS_FLAT
+    PUSHBUTTON      "Invert",IDC_INVERT_BUTTON,203,97,25,14,BS_FLAT
+    LTEXT           "Title",IDC_TITLE_STATIC,23,9,14,8
+    LTEXT           "Artist",IDC_ARTIST_STATIC,21,23,16,8
+    LTEXT           "Album",IDC_ALBUM_STATIC,17,39,20,8
+    LTEXT           "Year",IDC_YEAR_STATIC,21,53,16,8
+    LTEXT           "Comment",IDC_COMMENT_STATIC,7,76,30,8
+    CONTROL         "",IDC_TITLECHK,"Button",BS_AUTOCHECKBOX | BS_FLAT,221,9,9,8
+    CONTROL         "",IDC_ARTISTCHK,"Button",BS_AUTOCHECKBOX | BS_FLAT,221,24,9,8
+    CONTROL         "",IDC_ALBUMCHK,"Button",BS_AUTOCHECKBOX | BS_FLAT,221,39,9,8
+    CONTROL         "",IDC_YEARCHK,"Button",BS_AUTOCHECKBOX | BS_FLAT,73,54,11,8
+    CONTROL         "",IDC_GENRECHK,"Button",BS_AUTOCHECKBOX | BS_FLAT,221,55,9,8
+    CONTROL         "",IDC_COMMENTCHK,"Button",BS_AUTOCHECKBOX | BS_FLAT,221,76,9,8
+    LTEXT           "Track",IDC_TRACK_STATIC,17,96,20,8
+    CONTROL         "",IDC_TRACKCHK,"Button",BS_AUTOCHECKBOX | BS_FLAT,74,98,9,8
+    LTEXT           "Genre",IDC_GENRE_STATIC,89,54,20,8
+END
+
+IDD_ID3V1_DIALOG DIALOG 0, 0, 240, 110
+STYLE DS_SETFONT | WS_CHILD | WS_CLIPSIBLINGS
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_TITLE_EDIT,45,7,163,12
+    EDITTEXT        IDC_ARTIST_EDIT,45,22,163,12
+    EDITTEXT        IDC_ALBUM_EDIT,45,37,163,12
+    EDITTEXT        IDC_YEAR_EDIT,45,53,25,12,ES_NUMBER
+    COMBOBOX        IDC_GENRE_COMBO,115,53,93,75,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_COMMENT_EDIT,45,69,163,12
+    EDITTEXT        IDC_TRACK_EDIT,45,85,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Case",IDC_CORRECT_BUTTON,85,85,25,14,BS_FLAT
+    PUSHBUTTON      "Empty",IDC_EMPTY_BUTTON,114,85,32,14,BS_FLAT
+    CONTROL         "",IDC_TITLECHK,"Button",BS_AUTOCHECKBOX | BS_FLAT,213,9,16,8
+    CONTROL         "",IDC_ARTISTCHK,"Button",BS_AUTOCHECKBOX | BS_FLAT,213,24,16,8
+    CONTROL         "",IDC_ALBUMCHK,"Button",BS_AUTOCHECKBOX | BS_FLAT,213,39,16,8
+    CONTROL         "",IDC_YEARCHK,"Button",BS_AUTOCHECKBOX | BS_FLAT,73,55,16,8
+    CONTROL         "",IDC_GENRECHK,"Button",BS_AUTOCHECKBOX | BS_FLAT,213,55,16,8
+    CONTROL         "",IDC_COMMENTCHK,"Button",BS_AUTOCHECKBOX | BS_FLAT,213,70,16,8
+    CONTROL         "",IDC_TRACKCHK,"Button",BS_AUTOCHECKBOX | BS_FLAT,73,87,11,8
+    LTEXT           "Title",IDC_TITLE_STATIC,23,9,14,8
+    LTEXT           "Artist",IDC_ARTIST_STATIC,21,23,16,8
+    LTEXT           "Album",IDC_ALBUM_STATIC,17,39,20,8
+    LTEXT           "Year",IDC_YEAR_STATIC,21,53,16,8
+    LTEXT           "Comment",IDC_COMMENT_STATIC,7,70,30,8
+    LTEXT           "Track",IDC_TRACK_STATIC,17,86,20,8
+    LTEXT           "Genre",IDC_GENRE_STATIC,89,54,20,8
+    PUSHBUTTON      "All",IDC_ALL_BUTTON,150,85,21,14,BS_FLAT
+    PUSHBUTTON      "None",IDC_NONE_BUTTON,175,85,25,14,BS_FLAT
+    PUSHBUTTON      "Invert",IDC_INVERT_BUTTON,204,85,25,14,BS_FLAT
+END
+
+IDD_ID3V1LIST_DIALOG DIALOG 0, 0, 503, 180
+STYLE DS_SETFONT | WS_CHILD | WS_CLIPSIBLINGS
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_ID3V1VIEW_LIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_EDITLABELS | LVS_OWNERDATA | WS_BORDER,3,7,493,153
+    EDITTEXT        IDC_FILEPATH_EDIT,3,161,493,12,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_MPEGINFO_DIALOG DIALOG 0, 0, 246, 29
+STYLE DS_SETFONT | WS_CHILD | WS_CLIPSIBLINGS
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Size:",IDC_SIZE_STATIC,7,0,15,8
+    LTEXT           "Length:",IDC_LENGTH_STATIC,93,0,25,8
+    LTEXT           "MPEG-1 Layer 3",IDC_VERSIONDATA_STATIC,175,0,59,8
+    LTEXT           "Bitrate:",IDC_BITRATE_STATIC,7,10,22,8
+    LTEXT           "Frequency:",IDC_FREQUENCY_STATIC,93,10,36,8
+    LTEXT           "Mode:",IDC_MODE_STATIC,175,10,21,8
+    LTEXT           "CRCs:",IDC_CRC_STATIC,52,20,21,8
+    LTEXT           "Copyrighted:",IDC_COPYRIGHT_STATIC,175,20,40,8
+    LTEXT           "Original:",IDC_ORIGINAL_STATIC,7,20,26,8
+    LTEXT           "Emphasis:",IDC_EMPHASIS_STATIC,93,20,33,8
+    LTEXT           "3363450 bytes",IDC_SIZEDATA_STATIC,24,0,66,8
+    LTEXT           "208 seconds",IDC_LENGTHDATA_STATIC,120,0,42,8
+    LTEXT           "128 kbps CBR",IDC_BITRATEDATA_STATIC,30,10,47,8
+    LTEXT           "44100 Hz",IDC_FREQUENCYDATA_STATIC,130,10,32,8
+    LTEXT           "Joint Stereo",IDC_MODEDATA_STATIC,197,10,38,8
+    LTEXT           "No",IDC_CRCDATA_STATIC,73,20,18,8
+    LTEXT           "No",IDC_COPYRIGHTDATA_STATIC,215,20,20,8
+    LTEXT           "No",IDC_ORIGINALDATA_STATIC,33,20,16,8
+    LTEXT           "None",IDC_EMPHASISDATA_STATIC,127,20,37,8
+END
+
+IDD_PICTURE_DIALOG DIALOG 0, 0, 238, 116
+STYLE DS_SETFONT | WS_CHILD | WS_CLIPSIBLINGS
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Open Picture",IDC_OPEN_BUTTON,125,7,106,14,BS_FLAT
+    PUSHBUTTON      "Load Picture",IDC_LOAD_BUTTON,125,25,106,14,BS_FLAT
+    PUSHBUTTON      "Remove Picture",IDC_REMOVEPIC_BUTTON,125,43,106,14,BS_FLAT
+    COMBOBOX        IDC_PICTYPE_COMBO,125,70,106,60,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PICDESCRIPTION_EDIT,125,94,106,14,ES_AUTOHSCROLL
+    LTEXT           "Picture Type",IDC_PICTYPE_STATIC,125,60,41,8
+    LTEXT           "Picture Description",IDC_PICDESCRIPTION_STATIC,125,84,60,8
+    CONTROL         "",IDC_PICTURE_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,7,113,102
+END
+
+IDD_ID3V2LIST_DIALOG DIALOG 0, 0, 503, 180
+STYLE DS_SETFONT | WS_CHILD | WS_CLIPSIBLINGS
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_ID3V2VIEW_LIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_EDITLABELS | LVS_OWNERDATA | WS_BORDER,3,7,493,153
+    EDITTEXT        IDC_FILEPATH_EDIT,3,161,493,12,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_OPENFILE_TEMPLATE DIALOG 0, 0, 285, 38
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_PATH_EDIT,54,2,156,12,ES_AUTOHSCROLL
+    CONTROL         "Recurse Subdirectories",IDC_RECURSECHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,20,88,8
+    LTEXT           "Folder Path:",IDC_STATIC,5,4,39,8
+END
+
+IDD_SAPREFS DIALOG 0, 0, 394, 234
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Prefs"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tree1",IDC_PAGE_TREE,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,4,5,91,172
+    DEFPUSHBUTTON   "OK",IDOK,10,190,73,14
+    PUSHBUTTON      "Cancel",IDCANCEL,10,209,34,14
+    PUSHBUTTON      "Help",IDC_PHELP,49,209,34,14
+    CONTROL         "",IDC_DLG_FRAME,"Static",SS_GRAYFRAME | NOT WS_VISIBLE,100,18,292,209
+    LTEXT           "",IDC_CAPTION_BAR,100,5,291,12,SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,4,182,91,45
+END
+
+IDD_PREFS_PAGE2 DIALOG 0, 0, 286, 208
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_PREFS_PAGE1 DIALOG 0, 0, 286, 208
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_PREFS_ID3V2HIDEPAGE DIALOG 0, 0, 286, 208
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_SHOWCOL_LIST,48,37,77,115,LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_HIDECOL_LIST,188,37,77,115,LBS_SORT | LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "<<Add",IDC_ADD_BUTTON,131,72,50,14
+    PUSHBUTTON      "Remove>>",IDC_REMOVE_BUTTON,132,94,50,14
+    PUSHBUTTON      "Up",IDC_UP_BUTTON,7,72,36,14
+    PUSHBUTTON      "Down",IDC_DOWN_BUTTON,7,94,36,14
+    LTEXT           "Show Columns",IDC_STATIC,62,24,48,8
+    LTEXT           "Hide Columns",IDC_STATIC,204,24,44,8
+    GROUPBOX        "Select Columns to Show/Hide",IDC_STATIC,3,5,277,202
+    LTEXT           "Use Add or Remove Buttons to add the list columns you would like to Show/Hide. To change the order of the columns shown, highlight an item and use the Up and Down buttons.",IDC_STATIC,14,161,258,26
+    PUSHBUTTON      "<<Add All",IDC_ADDALL_BUTTON,132,116,50,14
+    PUSHBUTTON      "Remove All>>",IDC_REMOVEALL_BUTTON,132,138,50,14
+END
+
+IDD_PREFS_ID3V2EXPORTPAGE DIALOG 0, 0, 286, 208
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_SELCOL_LIST,48,37,77,115,LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_AVAILCOL_LIST,188,37,77,115,LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "<<Add",IDC_ADD_BUTTON,131,72,50,14
+    PUSHBUTTON      "Remove>>",IDC_REMOVE_BUTTON,132,94,50,14
+    PUSHBUTTON      "Up",IDC_UP_BUTTON,7,72,36,14
+    PUSHBUTTON      "Down",IDC_DOWN_BUTTON,7,94,36,14
+    LTEXT           "Selected Columns",IDC_STATIC,57,24,58,8
+    LTEXT           "Available Columns",IDC_STATIC,197,24,58,8
+    GROUPBOX        "Select Columns to Export",IDC_STATIC,3,5,277,202
+    LTEXT           "Use Add or Remove Buttons to add the list columns you would like to export. To change the order of the exported columns highlight an item and use the Up and Down buttons.",IDC_STATIC,14,161,258,26
+    PUSHBUTTON      "<<Add All",IDC_ADDALL_BUTTON,132,116,50,14
+    PUSHBUTTON      "Remove All>>",IDC_REMOVEALL_BUTTON,132,138,50,14
+    CONTROL         "Prompt me for Preferences every time Export Tags is used",IDC_PROMPT_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,188,197,10
+END
+
+IDD_PREFS_ID3V1HIDEPAGE DIALOG 0, 0, 286, 209
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_SHOWCOL_LIST,48,37,77,115,LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_HIDECOL_LIST,188,37,77,115,LBS_SORT | LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "<<Add",IDC_ADD_BUTTON,131,72,50,14
+    PUSHBUTTON      "Remove>>",IDC_REMOVE_BUTTON,132,94,50,14
+    PUSHBUTTON      "Up",IDC_UP_BUTTON,7,72,36,14
+    PUSHBUTTON      "Down",IDC_DOWN_BUTTON,7,94,36,14
+    LTEXT           "Show Columns",IDC_STATIC,62,24,48,8
+    LTEXT           "Hide Columns",IDC_STATIC,204,24,44,8
+    GROUPBOX        "Select Columns to Show/Hide",IDC_STATIC,3,5,277,202
+    LTEXT           "Use Add or Remove Buttons to add the list columns you would like to Show/Hide. To change the order of the columns shown, highlight an item and use the Up and Down buttons.",IDC_STATIC,14,161,258,26
+    PUSHBUTTON      "<<Add All",IDC_ADDALL_BUTTON,132,116,50,14
+    PUSHBUTTON      "Remove All>>",IDC_REMOVEALL_BUTTON,132,138,50,14
+END
+
+IDD_PREFS_ID3V1EXPORTPAGE DIALOG 0, 0, 286, 209
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_SELCOL_LIST,48,37,77,115,LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_AVAILCOL_LIST,188,37,77,115,LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "<<Add",IDC_ADD_BUTTON,131,72,50,14
+    PUSHBUTTON      "Remove>>",IDC_REMOVE_BUTTON,132,94,50,14
+    PUSHBUTTON      "Up",IDC_UP_BUTTON,7,72,36,14
+    PUSHBUTTON      "Down",IDC_DOWN_BUTTON,7,94,36,14
+    LTEXT           "Selected Columns",IDC_STATIC,57,24,58,8
+    LTEXT           "Available Columns",IDC_STATIC,197,24,58,8
+    GROUPBOX        "Select Columns to Export",IDC_STATIC,3,5,277,202
+    LTEXT           "Use Add or Remove Buttons to add the list columns you would like to export. To change the order of the exported columns highlight an item and use the Up and Down buttons.",IDC_STATIC,14,161,258,26
+    PUSHBUTTON      "<<Add All",IDC_ADDALL_BUTTON,132,116,50,14
+    PUSHBUTTON      "Remove All>>",IDC_REMOVEALL_BUTTON,132,138,50,14
+    CONTROL         "Prompt me for Preferences every time Export Tags is used",IDC_PROMPT_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,188,197,10
+END
+
+IDD_PREFS_CORRECTCASEPAGE DIALOG 0, 0, 286, 208
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Correct Case/Clean Filenames options",IDC_STATIC,3,5,277,202
+    EDITTEXT        IDC_CASESYMBOLS_EDIT,18,26,246,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Use Defaults",IDC_USEDEFAULTS_BUTTON,224,189,50,14
+    GROUPBOX        "Capitalize the next letter after the following symbols",IDC_STATIC,9,14,265,42
+    LTEXT           "Enter symbols in the box above, leaving no space in between each symbol",IDC_STATIC,20,44,242,9
+    GROUPBOX        "Capitalize the next letter after the following Prefix words",IDC_STATIC,9,58,265,42
+    EDITTEXT        IDC_PREFIXWORDS_EDIT,18,70,246,14,ES_AUTOHSCROLL
+    LTEXT           "Enter words in the box above, with a comma separating each word",IDC_STATIC,20,88,242,9
+    GROUPBOX        "Always make these words UPPER case",IDC_STATIC,9,102,265,42
+    EDITTEXT        IDC_UPPERCASEWORDS_EDIT,18,114,246,14,ES_AUTOHSCROLL
+    LTEXT           "Enter words in the box above, with a comma separating each word",IDC_STATIC,20,132,242,9
+    GROUPBOX        "Always make these words lower case",IDC_STATIC,9,146,265,42
+    EDITTEXT        IDC_LOWERCASEWORDS_EDIT,18,159,246,14,ES_AUTOHSCROLL
+    LTEXT           "Enter words in the box above, with a comma separating each word",IDC_STATIC,20,176,242,9
+END
+
+IDD_PREFS_MISC DIALOG 0, 0, 286, 208
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Miscellaneous Options",IDC_STATIC,3,5,277,202
+    CONTROL         "Preserve the Last Modified Time stamp for all file operations",IDC_TIMESTAMP_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,28,202,10
+    CONTROL         "Automatically load the last used directory when the program starts",IDC_AUTOLOADLASTDIR_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,49,221,10
+END
+
+IDD_PREFS_COLORPAGE DIALOGEX 0, 0, 286, 208
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "File List Color Options",IDC_STATIC,3,5,277,202
+    LTEXT           "Use this color for alternate files in the ID3v1.1 List:",IDC_STATIC,21,46,158,8
+    LTEXT           "Use this color for text shown in the ID3v1.1 List:",IDC_STATIC,21,65,151,8
+    LTEXT           "Use this color for alternate files in the ID3v2.x List:",IDC_STATIC,21,124,158,8
+    LTEXT           "Use this color for text shown in the ID3v2.x List:",IDC_STATIC,21,144,150,8
+    GROUPBOX        "",IDC_ID3V1FILECOLOR_STATIC,181,43,37,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Edit Color",IDC_ID3V1FILECOLOR_BUTTON,225,43,50,14
+    GROUPBOX        "",IDC_ID3V1FILETEXTCOLOR_STATIC,181,62,37,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Edit Color",IDC_ID3V1FILETEXTCOLOR_BUTTON,225,62,50,14
+    GROUPBOX        "",IDC_ID3V2FILECOLOR_STATIC,181,121,37,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Edit Color",IDC_ID3V2FILECOLOR_BUTTON,225,121,50,14
+    GROUPBOX        "",IDC_ID3V2FILETEXTCOLOR_STATIC,181,141,37,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Edit Color",IDC_ID3V2FILETEXTCOLOR_BUTTON,225,141,50,14
+    LTEXT           "Color for untagged files in the ID3v1.1 List:",IDC_STATIC,21,84,134,8
+    GROUPBOX        "",IDC_ID3V1NOTAGCOLOR_STATIC,181,81,37,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Edit Color",IDC_ID3V1NOTAGCOLOR_BUTTON,225,81,50,14
+    LTEXT           "Text color for untagged files in the ID3v1.1 List:",IDC_STATIC,21,104,150,8
+    GROUPBOX        "",IDC_ID3V1NOTAGTEXTCOLOR_STATIC,181,101,37,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Edit Color",IDC_ID3V1NOTAGTEXTCOLOR_BUTTON,225,101,50,14
+    LTEXT           "Color for untagged files in the ID3v2.x List:",IDC_STATIC,21,164,134,8
+    GROUPBOX        "",IDC_ID3V2NOTAGCOLOR_STATIC,181,161,37,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Edit Color",IDC_ID3V2NOTAGCOLOR_BUTTON,225,161,50,14
+    LTEXT           "Text color for untagged files in the ID3v2.x List:",IDC_STATIC,21,184,149,8
+    GROUPBOX        "",IDC_ID3V2NOTAGTEXTCOLOR_STATIC,181,181,37,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Edit Color",IDC_ID3V2NOTAGTEXTCOLOR_BUTTON,225,181,50,14
+    PUSHBUTTON      "Use Defaults",IDC_USEDEFAULTCOLORS_BUTTON,21,24,50,14
+    PUSHBUTTON      "Don't Use Colors",IDC_DONTUSECOLORS_BUTTON,83,24,61,14
+END
+
+IDD_PREFS_COPYTAGSPAGE DIALOG 0, 0, 286, 208
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Copy Tags Options",IDC_STATIC,3,5,277,202
+    CONTROL         "Title",IDC_TITLECHK,"Button",BS_AUTOCHECKBOX | BS_FLAT,23,50,45,8
+    CONTROL         "Artist",IDC_ARTISTCHK,"Button",BS_AUTOCHECKBOX | BS_FLAT,23,68,39,8
+    CONTROL         "Album",IDC_ALBUMCHK,"Button",BS_AUTOCHECKBOX | BS_FLAT,23,86,40,8
+    CONTROL         "Year",IDC_YEARCHK,"Button",BS_AUTOCHECKBOX | BS_FLAT,23,104,48,8
+    CONTROL         "Genre",IDC_GENRECHK,"Button",BS_AUTOCHECKBOX | BS_FLAT,23,140,44,8
+    CONTROL         "Comment",IDC_COMMENTCHK,"Button",BS_AUTOCHECKBOX | BS_FLAT,23,122,52,8
+    CONTROL         "Track",IDC_TRACKCHK,"Button",BS_AUTOCHECKBOX | BS_FLAT,23,158,50,8
+    LTEXT           "Select the ID3v1.1 or ID3v2.x tag fields you would like to be copied while copying tags from ID3v1.1 to ID3v2.x, or copying from ID3v2.x to ID3v1.1",IDC_STATIC,23,23,233,20
+    CONTROL         "Prompt me for Preferences every time Copy Tags is used",IDC_PROMPT_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,182,193,10
+    PUSHBUTTON      "Select All",IDC_SELECTALL_BUTTON,123,75,56,14
+    PUSHBUTTON      "Remove All",IDC_REMOVEALL_BUTTON,123,97,56,14
+    PUSHBUTTON      "Invert Selection",IDC_INVERTSEL_BUTTON,123,119,56,14
+END
+
+IDD_PPAGE_FILENAMEFORMAT DIALOG 0, 0, 374, 201
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Filename Format"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_FILENAMEFORMAT_LIST,15,101,283,82,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_FILENAMEFORMAT_EDIT,15,23,343,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Delete Format",IDC_DELETEFORMAT_BUTTON,305,101,50,14,BS_FLAT
+    PUSHBUTTON      "&Edit Format",IDC_EDITFORMAT_BUTTON,305,123,50,14,BS_FLAT
+    PUSHBUTTON      "Move &up",IDC_MOVEUP_BUTTON,305,145,50,14,BS_FLAT
+    PUSHBUTTON      "Move D&own",IDC_MOVEDOWN_BUTTON,305,167,50,14,BS_FLAT
+    CONTROL         "<Artist> = *1 ",IDC_ARTISTFORMAT_CHK,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,15,46,51,10
+    CONTROL         "<Title> = *2",IDC_TITLEFORMAT_CHK,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,70,46,49,10
+    CONTROL         "<Album> = *3",IDC_ALBUMFORMAT_CHK,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,123,46,55,10
+    CONTROL         "<Year> = *4",IDC_YEARFORMAT_CHK,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,182,46,49,10
+    CONTROL         "<Comment> = *5",IDC_COMMENTFORMAT_CHK,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,235,46,66,10
+    CONTROL         "<Track> = *6",IDC_TRACKFORMAT_CHK,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,305,46,57,10
+    PUSHBUTTON      "<Ignore> = *0",IDC_IGNORE_BUTTON,15,62,50,14,BS_FLAT
+    PUSHBUTTON      "Add &Separator",IDC_ADDSEPARATOR_BUTTON,81,62,57,14,BS_FLAT
+    COMBOBOX        IDC_SEPARATOR_COMBO,143,63,48,57,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Store &Format",IDC_STOREFORMAT_BUTTON,248,61,50,14,BS_FLAT
+    PUSHBUTTON      "E&mpty",IDC_EMPTYFORMAT_BUTTON,305,61,50,14,BS_FLAT
+    GROUPBOX        "Stored Filename Formats",-1,7,87,360,107
+    GROUPBOX        "Create/Edit Filename Format",-1,7,7,360,78
+END
+
+IDD_PPAGE_DIRECTORYFORMAT DIALOG 0, 0, 374, 218
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Directory Format"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_DIRECTORYFORMAT_LIST,15,120,283,82,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_DIRECTORYFORMAT_EDIT,15,23,284,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Delete Format",IDC_DELETEFORMAT_BUTTON,305,120,50,14,BS_FLAT
+    PUSHBUTTON      "&Edit Format",IDC_EDITFORMAT_BUTTON,305,142,50,14,BS_FLAT
+    PUSHBUTTON      "Move &up",IDC_MOVEUP_BUTTON,305,164,50,14,BS_FLAT
+    PUSHBUTTON      "Move D&own",IDC_MOVEDOWN_BUTTON,305,186,50,14,BS_FLAT
+    PUSHBUTTON      "<Ignore> = *0",IDC_IGNORE_BUTTON,305,63,50,14,BS_FLAT
+    PUSHBUTTON      "Add &Separator",IDC_ADDSEPARATOR_BUTTON,15,62,61,14,BS_FLAT
+    COMBOBOX        IDC_SEPARATOR_COMBO,82,62,29,57,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Store &Format",IDC_STOREFORMAT_BUTTON,246,82,50,14,BS_FLAT
+    PUSHBUTTON      "E&mpty",IDC_EMPTYFORMAT_BUTTON,305,82,50,14,BS_FLAT
+    GROUPBOX        "Stored Directory Formats",-1,7,105,360,106
+    GROUPBOX        "Create/Edit Directory Format",-1,7,7,360,96
+    PUSHBUTTON      "Use Folder",IDC_USEFOLDER_BUTTON,305,24,50,14,BS_FLAT
+    PUSHBUTTON      "<Current Folder> = *8",IDC_CURRENTFOLDER_BUTTON,15,44,75,14,BS_FLAT
+    PUSHBUTTON      "<Artist> = *1",IDC_ARTISTFORMAT_BUTTON,181,44,50,14,BS_FLAT
+    PUSHBUTTON      "<Album> = *3",IDC_ALBUMFORMAT_BUTTON,246,44,50,14,BS_FLAT
+    PUSHBUTTON      "<Year> = *4",IDC_YEARFORMAT_BUTTON,305,44,50,14,BS_FLAT
+    PUSHBUTTON      "<Comment> = *5",IDC_COMMENTFORMAT_BUTTON,181,62,58,14,BS_FLAT
+    PUSHBUTTON      "<Genre> = *7",IDC_GENREFORMAT_BUTTON,246,62,50,14,BS_FLAT
+    PUSHBUTTON      "Add \\",IDC_ADDBSLASH_BUTTON,99,44,50,14,BS_FLAT
+END
+
+IDD_PPAGE_FILERENAME DIALOG 0, 0, 370, 198
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "File Rename"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Use Leading Zeros For Tracks (1 - 9)",IDC_LEADZERO_CHECK,
+                    "Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,27,28,129,10
+    EDITTEXT        IDC_LEADZERO_EDIT1,159,26,23,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LEADZERO_EDIT2,221,26,23,14,ES_AUTOHSCROLL
+    CONTROL         "Append Bitrate to filename",IDC_APPENDBIT_CHECK,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,27,55,99,10
+    CONTROL         "Append Mode to filename",IDC_APPENDMODE_CHECK,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,27,82,97,10
+    GROUPBOX        "Additional Custom File Rename Options",IDC_STATIC,7,7,356,184
+    LTEXT           "(10 - 99)",IDC_STATIC,191,30,27,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,2,0,0
+ PRODUCTVERSION 1,2,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x21L
+#else
+ FILEFLAGS 0x20L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Mp3 Tag Tools - ID3 v1,v2 tag editor"
+            VALUE "CompanyName", "John George K."
+            VALUE "FileDescription", "mp3tagtools MFC Application"
+            VALUE "FileVersion", "1, 2, 0, 0"
+            VALUE "InternalName", "mp3tagtools"
+            VALUE "LegalCopyright", "Copyright (C) 2015 John George K."
+            VALUE "LegalTrademarks", "Mp3 Tag Tools (C)"
+            VALUE "OriginalFilename", "mp3tagtools.EXE"
+            VALUE "ProductName", "mp3tagtools Application"
+            VALUE "ProductVersion", "1, 2, 0, 0"
+            VALUE "SpecialBuild", "010"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_MP3TAGTOOLS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 502
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 319
+        HORZGUIDE, 60
+        HORZGUIDE, 174
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 274
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 219
+    END
+
+    IDD_LYRICS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+
+    IDD_ID3V2_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_ID3V1_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_ID3V1LIST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 496
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+        HORZGUIDE, 160
+    END
+
+    IDD_PICTURE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+
+    IDD_ID3V2LIST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 496
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+        HORZGUIDE, 160
+    END
+
+    IDD_OPENFILE_TEMPLATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 278
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 29
+    END
+
+    IDD_SAPREFS, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 392
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 227
+    END
+
+    IDD_PPAGE_FILENAMEFORMAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 367
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_PPAGE_DIRECTORYFORMAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 367
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_PPAGE_FILERENAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 363
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_LIST_MENU MENU
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Play",                        ID_FILE_PLAY
+        MENUITEM "Enqueue in Winamp",           ID_FILE_ENQUEUE, HELP
+        MENUITEM "Open File Location",          ID_FILE_OPENFILEDIR
+        MENUITEM SEPARATOR
+        MENUITEM "Write Tags",                  ID_FILE_WRITETAGS
+        MENUITEM "Rename Files",                ID_FILE_RENAMEFILES
+        MENUITEM "Remove Tags",                 ID_FILE_REMOVETAGS
+        MENUITEM "Remove All Non-ID3 Tags",     ID_FILE_REMOVENONID3TAGS
+        MENUITEM "Clean Filenames",             ID_FILE_CLEANFILENAMES
+        MENUITEM SEPARATOR
+        MENUITEM "Copy ID3v1.1----> ID3v2.x",   ID_FILE_COPYV1TOV2
+        MENUITEM "Copy ID3v1.1<---- ID3v2.x",   ID_FILE_COPYV2TOV1
+        MENUITEM "Synchronize Tags",            ID_FILE_SYNCHRONIZE
+        MENUITEM SEPARATOR
+        MENUITEM "Delete File",                 ID_FILE_DELETEFILE
+        MENUITEM SEPARATOR
+        MENUITEM "Select All Items",            ID_FILE_SELECTALLITEMS
+        MENUITEM "Invert Selection",            ID_FILE_INVERTSELECTION
+        MENUITEM "Refresh List",                ID_FILE_REFRESHLIST
+        MENUITEM SEPARATOR
+        MENUITEM "Export Data",                 ID_FILE_EXPORTDATA
+        POPUP "View Allmusic Info for"
+        BEGIN
+            MENUITEM "Artist",                      ID_ALLMUSIC_ARTIST
+            MENUITEM "Album",                       ID_ALLMUSIC_ALBUM
+            MENUITEM "Title/Song",                  ID_ALLMUSIC_TITLE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Preferences",                 ID_FILE_PREFS
+    END
+END
+
+IDR_MAINDLG_MENU MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open Directory...\tCtrl+O",  ID_FILE_OPENDIRECTORY
+        MENUITEM SEPARATOR
+        MENUITEM "&Play\tCtrl+Enter",           ID_FILE_PLAY
+        MENUITEM "En&queue in Winamp\tCtrl+Q",  ID_FILE_ENQUEUE
+        MENUITEM "Open File &Location\tCtrl+L", ID_FILE_OPENFILEDIR
+        MENUITEM SEPARATOR
+        MENUITEM "&Rename File\tF2 or Ctrl+R",  ID_FILE_RENAMEFILES
+        MENUITEM "&Delete File\tF9",            ID_FILE_DELETEFILE
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit\t Alt+F4",              ID_FILE_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Write Tags\tF3 or Ctrl+W",   ID_EDIT_WRITETAGS
+        MENUITEM "Re&move Tags\tCtrl+Del",      ID_EDIT_REMOVETAGS
+        MENUITEM SEPARATOR
+        MENUITEM "Correct &Case",               ID_EDIT_CORRECTCASE
+        MENUITEM "&Empty",                      ID_EDIT_EMPTY
+        MENUITEM SEPARATOR
+        MENUITEM "Select &All Fields",          ID_EDIT_SELECTALLFIELDS
+        MENUITEM "Select &None of the Fields",  ID_EDIT_SELECTNONEOFTHEFIELDS
+        MENUITEM "&Invert Field Selection",     ID_EDIT_INVERTFIELDSELECTION
+        MENUITEM SEPARATOR
+        MENUITEM "Select All Files\tCtrl+A",    ID_EDIT_SELECTALL
+        MENUITEM "Invert Selection\tCtrl+I",    ID_EDIT_INVERTSELECTION
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "ID3v&1.1\tCtrl+1",            ID_VIEW_ID3V11
+        MENUITEM "ID3v&2.x\tCtrl+2",            ID_VIEW_ID3V2X
+        MENUITEM "&Lyrics\tCtrl+3",             ID_VIEW_LYRICS
+        MENUITEM "&Picture\tCtrl+4",            ID_VIEW_PICTURE
+        MENUITEM SEPARATOR
+        MENUITEM "Switch Window Focus\tF4",     ID_VIEW_SWITCHWINDOWFOCUS
+        MENUITEM "&Refresh\tF5",                ID_VIEW_REFRESH
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "Copy ID3v1.1----> ID3v&2.x\tF6", ID_TOOLS_COPYV1TOV2
+        MENUITEM "Copy ID3v&1.1<---- ID3v2.x\tF7", ID_TOOLS_COPYV2TOV1
+        MENUITEM "&Synchronize Tags\tF8",       ID_TOOLS_SYNCHRONIZE
+        MENUITEM SEPARATOR
+        MENUITEM "Clean File&names\tCtrl+N",    ID_TOOLS_CLEANFILENAMES
+        MENUITEM "Correct Case of &Tags\tCtrl+T", ID_TOOLS_CORRECTCASEOFTAGS
+        MENUITEM "Clean ID3v1.1 Tags\tCtrl+K",  ID_TOOLS_CLEANID3V11TAGS
+        MENUITEM SEPARATOR
+        MENUITEM "&Create Directory",           ID_TOOLS_CREATEDIRECTORY
+        MENUITEM "&Export Data...",             ID_TOOLS_EXPORTDATA
+        POPUP "&View Allmusic Info for"
+        BEGIN
+            MENUITEM "&Artist",                     ID_TOOLS_ALLMUSIC_ARTIST
+            MENUITEM "Al&bum",                      ID_TOOLS_ALLMUSIC_ALBUM
+            MENUITEM "&Title/Song",                 ID_TOOLS_ALLMUSIC_TITLE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Remove All &Non-ID3 Tags\tCtrl+Shift+Del", ID_TOOLS_REMOVENONID3TAGS
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "Use &Filename Format",        ID_OPTIONS_USEFILENAMEFORMAT
+        MENUITEM "Use &Directory Format",       ID_OPTIONS_USEDIRECTORYFORMAT
+        MENUITEM SEPARATOR
+        MENUITEM "Format &Options",             ID_OPTIONS_FORMATOPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "&Export Tags Options",        ID_OPTIONS_EXPORTTAGSOPTIONS
+        MENUITEM "&Correct Case Options",       ID_OPTIONS_CORRECTCASEOPTIONS
+        MENUITEM "Copy &Tags Options",          ID_OPTIONS_COPYTAGSOPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "Program &Preferences...",     ID_OPTIONS_PROGRAMPREFERENCES
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Contents and Index\tF1",     ID_HELP_CONTENTSANDINDEX
+        MENUITEM SEPARATOR
+        MENUITEM "&About Mp3 Tag Tools",        ID_HELP_ABOUTMP3TAGTOOLS
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// IMAGE
+//
+
+IDR_BLANKIMAGE          IMAGE                   "res\\blank.jpg"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PPAGE_FILENAMEFORMAT DLGINIT
+BEGIN
+    IDC_SEPARATOR_COMBO, 0x403, 4, 0
+0x2d20, 0x0020, 
+    IDC_SEPARATOR_COMBO, 0x403, 2, 0
+0x0028, 
+    IDC_SEPARATOR_COMBO, 0x403, 2, 0
+0x0029, 
+    IDC_SEPARATOR_COMBO, 0x403, 2, 0
+0x007b, 
+    IDC_SEPARATOR_COMBO, 0x403, 2, 0
+0x007d, 
+    0
+END
+
+IDD_PPAGE_DIRECTORYFORMAT DLGINIT
+BEGIN
+    IDC_SEPARATOR_COMBO, 0x403, 4, 0
+0x2d20, 0x0020, 
+    IDC_SEPARATOR_COMBO, 0x403, 2, 0
+0x0028, 
+    IDC_SEPARATOR_COMBO, 0x403, 2, 0
+0x0029, 
+    IDC_SEPARATOR_COMBO, 0x403, 2, 0
+0x007b, 
+    IDC_SEPARATOR_COMBO, 0x403, 2, 0
+0x007d, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINDLG_ACCELERATOR ACCELERATORS
+BEGIN
+    "1",            ID_VIEW_ID3V11,         VIRTKEY, CONTROL, NOINVERT
+    "2",            ID_VIEW_ID3V2X,         VIRTKEY, CONTROL, NOINVERT
+    "3",            ID_VIEW_LYRICS,         VIRTKEY, CONTROL, NOINVERT
+    "4",            ID_VIEW_PICTURE,        VIRTKEY, CONTROL, NOINVERT
+    "A",            ID_EDIT_SELECTALL,      VIRTKEY, CONTROL, NOINVERT
+    "I",            ID_EDIT_INVERTSELECTION, VIRTKEY, CONTROL, NOINVERT
+    "K",            ID_TOOLS_CLEANID3V11TAGS, VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_FILE_OPENFILEDIR,    VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_TOOLS_CLEANFILENAMES, VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPENDIRECTORY,  VIRTKEY, CONTROL, NOINVERT
+    "Q",            ID_FILE_ENQUEUE,        VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_FILE_RENAMEFILES,    VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_TOOLS_CORRECTCASEOFTAGS, VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_REMOVETAGS,     VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_TOOLS_REMOVENONID3TAGS, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_F1,          ID_HELP_CONTENTSANDINDEX, VIRTKEY, NOINVERT
+    VK_F2,          ID_FILE_RENAMEFILES,    VIRTKEY, NOINVERT
+    VK_F3,          ID_EDIT_WRITETAGS,      VIRTKEY, NOINVERT
+    VK_F4,          ID_VIEW_SWITCHWINDOWFOCUS, VIRTKEY, NOINVERT
+    VK_F5,          ID_VIEW_REFRESH,        VIRTKEY, NOINVERT
+    VK_F6,          ID_TOOLS_COPYV1TOV2,    VIRTKEY, NOINVERT
+    VK_F7,          ID_TOOLS_COPYV2TOV1,    VIRTKEY, NOINVERT
+    VK_F8,          ID_TOOLS_SYNCHRONIZE,   VIRTKEY, NOINVERT
+    VK_F9,          ID_FILE_DELETEFILE,     VIRTKEY, NOINVERT
+    VK_NUMPAD1,     ID_VIEW_ID3V11,         VIRTKEY, CONTROL, NOINVERT
+    VK_NUMPAD2,     ID_VIEW_ID3V2X,         VIRTKEY, CONTROL, NOINVERT
+    VK_NUMPAD3,     ID_VIEW_LYRICS,         VIRTKEY, CONTROL, NOINVERT
+    VK_NUMPAD4,     ID_VIEW_PICTURE,        VIRTKEY, CONTROL, NOINVERT
+    VK_RETURN,      ID_FILE_PLAY,           VIRTKEY, CONTROL, NOINVERT
+    "W",            ID_EDIT_WRITETAGS,      VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About mp3tagtools..."
+END
+
+STRINGTABLE
+BEGIN
+    IDC_STATICURL_PROJECTPAGE "http://sourceforge.net/projects/massid3lib"
+    IDC_STATICURL_HOME      "http://massid3lib.sourceforge.net"
+    IDC_STATICURL_ID3LIB    "http://sourceforge.net/project/?group_id=979"
+    IDC_STATICURL_EMAIL     "mailto:xeonfusion@users.sourceforge.net"
+    IDS_CASESYMBOLS         "()[]{}0123456789.~`!@#$%^&*-_+=|\\:;""<>,?/"
+    IDS_DELIMITERS          "()[]{} .~`!@#$%^&*-_+=|\\:;""<>,?/"
+    IDS_LOWERCASEWORDS      "and,aka,vs,feat"
+    IDS_PREFIXWORDS         "Mc,O',N',3D"
+    IDS_UPPERCASEWORDS      "DJ,MC,ABBA,MLTR,TLC,LL,II,UB40"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\mp3tagtools.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

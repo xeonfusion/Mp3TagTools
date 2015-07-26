@@ -1,0 +1,350 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: zlib - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP88.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I ".\\" /I ".\include" /I "..\include" /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\IDTagProgram\mtt-v1.2-devel\zlib\src\adler32.c"
+"E:\IDTagProgram\mtt-v1.2-devel\zlib\src\compress.c"
+"E:\IDTagProgram\mtt-v1.2-devel\zlib\src\crc32.c"
+"E:\IDTagProgram\mtt-v1.2-devel\zlib\src\deflate.c"
+"E:\IDTagProgram\mtt-v1.2-devel\zlib\src\gzio.c"
+"E:\IDTagProgram\mtt-v1.2-devel\zlib\src\infblock.c"
+"E:\IDTagProgram\mtt-v1.2-devel\zlib\src\infcodes.c"
+"E:\IDTagProgram\mtt-v1.2-devel\zlib\src\inffast.c"
+"E:\IDTagProgram\mtt-v1.2-devel\zlib\src\inflate.c"
+"E:\IDTagProgram\mtt-v1.2-devel\zlib\src\inftrees.c"
+"E:\IDTagProgram\mtt-v1.2-devel\zlib\src\infutil.c"
+"E:\IDTagProgram\mtt-v1.2-devel\zlib\src\trees.c"
+"E:\IDTagProgram\mtt-v1.2-devel\zlib\src\uncompr.c"
+"E:\IDTagProgram\mtt-v1.2-devel\zlib\src\zutil.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP88.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP89.tmp" with contents
+[
+/nologo /out:"Release\zlib.lib" 
+".\Release\adler32.obj"
+".\Release\compress.obj"
+".\Release\crc32.obj"
+".\Release\deflate.obj"
+".\Release\gzio.obj"
+".\Release\infblock.obj"
+".\Release\infcodes.obj"
+".\Release\inffast.obj"
+".\Release\inflate.obj"
+".\Release\inftrees.obj"
+".\Release\infutil.obj"
+".\Release\trees.obj"
+".\Release\uncompr.obj"
+".\Release\zutil.obj"
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\John\LOCALS~1\Temp\RSP89.tmp"
+<h3>Output Window</h3>
+Compiling...
+adler32.c
+compress.c
+crc32.c
+deflate.c
+gzio.c
+infblock.c
+infcodes.c
+inffast.c
+inflate.c
+inftrees.c
+infutil.c
+trees.c
+uncompr.c
+zutil.c
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: id3libstatic - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP8A.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I ".\\" /I ".\include" /I "..\\" /I "..\include" /I "..\include\id3" /I "..\zlib\include" /D "NDEBUG" /D "WIN32" /D "_MBCS" /D "_LIB" /D "__DLL" /D "HAVE_CONFIG_H" /D "ID3LIB_COMPILATION" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\IDTagProgram\mtt-v1.2-devel\src\c_wrapper.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\field.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\field_binary.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\field_integer.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\field_string_ascii.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\field_string_unicode.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\frame.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\frame_impl.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\frame_parse.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\frame_render.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\globals.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\header.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\header_frame.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\header_tag.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\helpers.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\io.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\io_decorators.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\io_helpers.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\misc_support.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\misc_support_addendum.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\readers.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\spec.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\tag.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\tag_file.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\tag_find.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\tag_impl.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\tag_parse.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\tag_parse_lyrics3.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\tag_parse_musicmatch.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\tag_parse_v1.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\tag_render.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\utils.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\src\writers.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP8A.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP8B.tmp" with contents
+[
+/nologo /out:"Release\id3libstatic.lib" 
+".\Release\c_wrapper.obj"
+".\Release\field.obj"
+".\Release\field_binary.obj"
+".\Release\field_integer.obj"
+".\Release\field_string_ascii.obj"
+".\Release\field_string_unicode.obj"
+".\Release\frame.obj"
+".\Release\frame_impl.obj"
+".\Release\frame_parse.obj"
+".\Release\frame_render.obj"
+".\Release\globals.obj"
+".\Release\header.obj"
+".\Release\header_frame.obj"
+".\Release\header_tag.obj"
+".\Release\helpers.obj"
+".\Release\io.obj"
+".\Release\io_decorators.obj"
+".\Release\io_helpers.obj"
+".\Release\misc_support.obj"
+".\Release\misc_support_addendum.obj"
+".\Release\readers.obj"
+".\Release\spec.obj"
+".\Release\tag.obj"
+".\Release\tag_file.obj"
+".\Release\tag_find.obj"
+".\Release\tag_impl.obj"
+".\Release\tag_parse.obj"
+".\Release\tag_parse_lyrics3.obj"
+".\Release\tag_parse_musicmatch.obj"
+".\Release\tag_parse_v1.obj"
+".\Release\tag_render.obj"
+".\Release\utils.obj"
+".\Release\writers.obj"
+"\IDTagProgram\mtt-v1.2-devel\zlib\Release\zlib.lib"
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\John\LOCALS~1\Temp\RSP8B.tmp"
+<h3>Output Window</h3>
+Compiling...
+c_wrapper.cpp
+field.cpp
+field_binary.cpp
+field_integer.cpp
+field_string_ascii.cpp
+field_string_unicode.cpp
+frame.cpp
+frame_impl.cpp
+frame_parse.cpp
+frame_render.cpp
+globals.cpp
+header.cpp
+header_frame.cpp
+header_tag.cpp
+helpers.cpp
+io.cpp
+io_decorators.cpp
+io_helpers.cpp
+misc_support.cpp
+misc_support_addendum.cpp
+Generating Code...
+Compiling...
+readers.cpp
+spec.cpp
+tag.cpp
+tag_file.cpp
+tag_find.cpp
+tag_impl.cpp
+tag_parse.cpp
+tag_parse_lyrics3.cpp
+tag_parse_musicmatch.cpp
+tag_parse_v1.cpp
+tag_render.cpp
+utils.cpp
+writers.cpp
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: mp3tagtools - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/mp3tagtools.res" /d "NDEBUG" /d "_AFXDLL" "E:\IDTagProgram\mtt-v1.2-devel\mp3tagtools.rc"" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP8C.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "c:\Program Files\HTML Help Workshop\INCLUDE" /I "." /I "include" /I "include\id3" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "HAVE_CONFIG_H" /FR"Release/" /Fp"Release/mp3tagtools.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\IDTagProgram\mtt-v1.2-devel\cfid3lib.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\ColorStatic.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\ControlPos.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\CShellFileOp.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\DirectoryPropPage.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\DirFormatParse.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\ErrorStatus.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\FilenamePropPage.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\FilerenamePropPage.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\FormatParse.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\FormatPropSheet.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\ID3v1ListDlg.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\ID3V1Page.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\ID3v2ListDlg.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\ID3V2Page.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\LyricsPage.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\massid3lib1.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\mp3tagtools.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\mp3tagtoolsDlg.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\MpeginfoDlg.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\MpgHeader.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\OpenDlg.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\ParsedDirFormat.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\ParsedFormat.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\PictCtrl.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\Picture.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\PicturePage.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\PrefsColorPage.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\PrefsCopyTagsPage.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\PrefsCorrectCasePage.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\PrefsID3V1ExportPage.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\PrefsID3V1HidePage.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\PrefsID3V2ExportPage.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\PrefsID3V2HidePage.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\PrefsMiscPage.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\PrefsPage1.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\PrefsPage2.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\SAPrefsDialog.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\SAPrefsStatic.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\SAPrefsSubDlg.cpp"
+"E:\IDTagProgram\mtt-v1.2-devel\StatLink.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP8C.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP8D.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "c:\Program Files\HTML Help Workshop\INCLUDE" /I "." /I "include" /I "include\id3" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "HAVE_CONFIG_H" /FR"Release/" /Fp"Release/mp3tagtools.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\IDTagProgram\mtt-v1.2-devel\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP8D.tmp" 
+Creating temporary file "C:\DOCUME~1\John\LOCALS~1\Temp\RSP8E.tmp" with contents
+[
+Htmlhelp.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/mp3tagtools.pdb" /machine:I386 /out:"Release/mp3tagtools.exe" /libpath:"c:\Program Files\HTML Help Workshop\LIB" 
+".\Release\cfid3lib.obj"
+".\Release\ColorStatic.obj"
+".\Release\ControlPos.obj"
+".\Release\CShellFileOp.obj"
+".\Release\DirectoryPropPage.obj"
+".\Release\DirFormatParse.obj"
+".\Release\ErrorStatus.obj"
+".\Release\FilenamePropPage.obj"
+".\Release\FilerenamePropPage.obj"
+".\Release\FormatParse.obj"
+".\Release\FormatPropSheet.obj"
+".\Release\ID3v1ListDlg.obj"
+".\Release\ID3V1Page.obj"
+".\Release\ID3v2ListDlg.obj"
+".\Release\ID3V2Page.obj"
+".\Release\LyricsPage.obj"
+".\Release\massid3lib1.obj"
+".\Release\mp3tagtools.obj"
+".\Release\mp3tagtoolsDlg.obj"
+".\Release\MpeginfoDlg.obj"
+".\Release\MpgHeader.obj"
+".\Release\OpenDlg.obj"
+".\Release\ParsedDirFormat.obj"
+".\Release\ParsedFormat.obj"
+".\Release\PictCtrl.obj"
+".\Release\Picture.obj"
+".\Release\PicturePage.obj"
+".\Release\PrefsColorPage.obj"
+".\Release\PrefsCopyTagsPage.obj"
+".\Release\PrefsCorrectCasePage.obj"
+".\Release\PrefsID3V1ExportPage.obj"
+".\Release\PrefsID3V1HidePage.obj"
+".\Release\PrefsID3V2ExportPage.obj"
+".\Release\PrefsID3V2HidePage.obj"
+".\Release\PrefsMiscPage.obj"
+".\Release\PrefsPage1.obj"
+".\Release\PrefsPage2.obj"
+".\Release\SAPrefsDialog.obj"
+".\Release\SAPrefsStatic.obj"
+".\Release\SAPrefsSubDlg.obj"
+".\Release\StatLink.obj"
+".\Release\StdAfx.obj"
+".\Release\mp3tagtools.res"
+".\id3libstatic\Release\id3libstatic.lib"
+]
+Creating command line "link.exe @C:\DOCUME~1\John\LOCALS~1\Temp\RSP8E.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+cfid3lib.cpp
+ColorStatic.cpp
+ControlPos.cpp
+CShellFileOp.cpp
+DirectoryPropPage.cpp
+DirFormatParse.cpp
+ErrorStatus.cpp
+FilenamePropPage.cpp
+FilerenamePropPage.cpp
+FormatParse.cpp
+FormatPropSheet.cpp
+ID3v1ListDlg.cpp
+ID3V1Page.cpp
+ID3v2ListDlg.cpp
+ID3V2Page.cpp
+LyricsPage.cpp
+massid3lib1.cpp
+mp3tagtools.cpp
+mp3tagtoolsDlg.cpp
+MpeginfoDlg.cpp
+Generating Code...
+Compiling...
+MpgHeader.cpp
+OpenDlg.cpp
+ParsedDirFormat.cpp
+ParsedFormat.cpp
+PictCtrl.cpp
+Picture.cpp
+PicturePage.cpp
+PrefsColorPage.cpp
+PrefsCopyTagsPage.cpp
+PrefsCorrectCasePage.cpp
+PrefsID3V1ExportPage.cpp
+PrefsID3V1HidePage.cpp
+PrefsID3V2ExportPage.cpp
+PrefsID3V2HidePage.cpp
+PrefsMiscPage.cpp
+PrefsPage1.cpp
+PrefsPage2.cpp
+SAPrefsDialog.cpp
+SAPrefsStatic.cpp
+SAPrefsSubDlg.cpp
+Generating Code...
+Compiling...
+StatLink.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+mp3tagtools.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
