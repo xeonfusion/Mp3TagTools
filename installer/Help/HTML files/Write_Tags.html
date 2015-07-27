@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../mtt.css">
+  <meta http-equiv="content-type"
+ content="text/html; charset=ISO-8859-1">
+  <title>Write Tags</title>
+</head>
+<body>
+<h1>Write Tags<br>
+</h1>
+<p>Before Writing tags select one or more files from the list by
+clicking
+in the list while
+pressing down the <b>Ctrl</b> key or by using the keyboard using <b>Ctrl+Shift+Up</b>
+arrow or <b>Ctrl+Shift+Down</b> arrow after selecting an item.<br>
+</p>
+<p>To write tags use the shortcut <b>Ctrl+W</b> or <b>Write Tags</b>
+button or
+select <b>Write Tags</b> from the <b>Edit</b> main program menu.</p>
+<p>Depending on the currently selected Tag info Tab <b>Write Tags</b>
+will:</p>
+&nbsp;
+<h2>ID3v1.1 or ID3v2.x Tab</h2>
+<h3><img
+ src="cfmass.png"
+ height="223" width="749" alt="image"></h3>
+<h3>Mass Tagging</h3>
+<p>If any of the the tag information (Artist, Title etc)&nbsp; fields
+in a tab page are
+enabled, then all the selected mp3s are set with same tags as that
+entered in the
+tag information field.<br>
+</p>
+<p>For example you have several mp3s from one
+Album and want to set the same Album tag to all mp3s. First disable
+all other fields by unchecking all other checkboxes except the <b>Album</b>
+checkbox. Enter the tag in the <b>Album</b>
+field ex: "Dance Album", make sure
+you
+have selected the files in the list to be tagged, then use <b>Ctrl+W</b>
+to write the tags.</p>
+<h3>Custom Format Tagging</h3>
+<p>You can use a custom format to
+write the tags from the mp3 filename or directory names. To create a
+Custom Format use the <a href="Format_Options.html"><b>Format Options</b></a>
+button.<br>
+</p>
+<ul>
+  <li>&nbsp;<b>Use Filename Format:</b>
+checking this will tag mp3 files based
+on their filenames. For example you have a mp3 named
+"Bee Gees - How Deep Is Your Love.mp3" by using a filename format like "<b>&lt;Artist&gt;
+- &lt;Title&gt;</b>" the
+program will read
+the filename of that mp3 file and extract all the letters before the "<b>
+- </b>" separator as the <b>&lt;Artist&gt;</b>
+tag and all the letters following it as
+the <b>&lt;Title&gt;</b> tag of the
+mp3. You can use any separators and any
+combination of formats by using the <b>Format
+Options</b> box.<br>
+  </li>
+  <li><b>Use Directory Format:</b> checking this will tag mp3s based on
+the name of the folder the file is in. For example the format "<b>..\Artist\Album</b>"
+will read the name of the folder containing the mp3 and write it to the
+    <b>Album</b> tag, the name of the folder in which this folder is
+contained is used to write the <b>Artist</b> tag. Directory formats
+can be used along with mass tagging or filename format tagging.</li>
+</ul>
+<b>Note:</b><br>
+<p>When a Filename or Directory format is selected the corresponding
+tag fields will be disabled by the program. For example using the
+filename format "<b>&lt;Artist&gt; -
+&lt;Title&gt;</b>" will disable the <b>Artist</b>
+and <b>Title</b> tag fields in the
+tag information page.&nbsp; This because the information to be written
+to these tags will be extracted from the filename or folder name, the
+user should not enter any information for those fields.</p>
+<h2>Lyrics Tab</h2>
+Only the lyrics of the mp3 will be written.
+<h2>Picture Tab</h2>
+<img src="pictab.png"
+ nosave="" height="219" width="371">
+<p>Each mp3 can have more than one picture, of a particular
+specified <b>Picture Type</b> and <b>Picture Description</b>.</p>
+<p>The default
+<b>Picture Type</b> used is "Other"
+you can change it another like
+"Cover ( front)" using the <b>Picture
+Type</b> combo box.</p>
+<p>Next use <b>Load Picture</b>
+Button, and browse to the
+location of the picture file (<a href="http://www.id3.org">ID3
+group</a> recommends JPEG or PNG files to keep tag sizes to a
+minimum), click <b>Open</b> and a
+preview of the file will load.<br>
+</p>
+<p>Enter
+a <b>Picture Description</b> or leave
+it empty. Now use <b>Write Tags</b>
+button to add the currently displayed picture to the mp3. Change
+Picture Type and repeat the steps to add another picture.</p>
+<br>
+</body>
+</html>

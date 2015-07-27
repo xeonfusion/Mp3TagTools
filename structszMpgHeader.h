@@ -1,5 +1,5 @@
 // structszMpgHeader.h: interface for the structszMpgHeader class.
-//Copyright (C) 2001-2015 John George K., xeonfusion@users.sourceforge.net
+//Copyright (C) 2001-2015 John George K., xeonfusion@yahoo.com
 //////////////////////////////////////////////////////////////////////
 
 #if !defined(AFX_STRUCTSZMPGHEADER_H__33004EF6_BF96_46A1_ABD7_572C49ED6996__INCLUDED_)

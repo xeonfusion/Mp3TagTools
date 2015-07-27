@@ -1,5 +1,5 @@
 // structFilePathData.h: interface for the structFilePathData class.
-//Copyright (C) 2001-2015 John George K., xeonfusion@users.sourceforge.net
+//Copyright (C) 2001-2015 John George K., xeonfusion@yahoo.com
 //////////////////////////////////////////////////////////////////////
 
 #if !defined(AFX_STRUCTFILEPATHDATA_H__3C4103E5_83DE_4BF8_B20F_596043468E6B__INCLUDED_)

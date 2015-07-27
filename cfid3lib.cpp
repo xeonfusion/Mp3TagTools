@@ -1,6 +1,6 @@
 // cfid3lib.cpp: implementation of the cfid3lib class.
 //
-/*  cfid3lib Copyright (C) 2001-2015 John George K., xeonfusion@users.sourceforge.net
+/*  cfid3lib Copyright (C) 2001-2015 John George K., xeonfusion@yahoo.com
 	
     This library is free software; you can redistribute it and/or
 	modify it under the terms of the GNU Lesser General Public

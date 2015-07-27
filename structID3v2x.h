@@ -1,5 +1,5 @@
 // structID3v2x.h: interface for the structID3v2x class.
-//Copyright (C) 2001-2015 John George K., xeonfusion@users.sourceforge.net
+//Copyright (C) 2001-2015 John George K., xeonfusion@yahoo.com
 //////////////////////////////////////////////////////////////////////
 
 #if !defined(AFX_STRUCTID3V2X_H__68DB1791_C419_4D4F_8564_7346F0FDEB2E__INCLUDED_)

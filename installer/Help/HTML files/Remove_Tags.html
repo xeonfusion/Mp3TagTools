@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../mtt.css">
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="Author" content="xeonfusion">
+  <meta name="GENERATOR"
+ content="Mozilla/4.78 [en] (Win98; U) [Netscape]">
+  <title>Remove Tags</title>
+</head>
+<body>
+<h1>Remove Tags</h1>
+<p>Before Removing tags select one or more files from the list by
+clicking
+in the list while
+pressing down the <b>Ctrl</b> key or by using the keyboard using <b>Ctrl+Shift+Up</b>
+arrow or <b>Ctrl+Shift+Down</b> arrow after selecting an item.<br>
+</p>
+<p>To remove tags from a mp3:<br>
+</p>
+<p>Use the shortcut <b>Ctrl+Delete</b> or <b>Remove Tags</b> button
+or
+select <b>Remove Tags</b> from the <b>Edit</b> main program menu.</p>
+<p>Depending on the currently selected Tag info Tab <b>Remove Tags</b>
+will: </p>
+&nbsp;
+<h2>ID3v1.1 Tab</h2>
+This will completely remove all ID3v1.1 tags (which according to the
+ID3v1.1 specification comes to 128 bytes at the end of the mp3 file),
+thus the file size decreases by 128 bytes.
+<h2>ID3v2.x Tab</h2>
+This will completely remove all ID3v2.x tags including any lyrics
+and pictures. Since the size of ID3v2.x tag varies, the filesizes
+are decreased by different amounts. Since ID3v2.x tags are stored in
+the begining of the mp3, after removing all v2.x tags, the MPEG
+<b>Header</b> column in the mp3 list
+should now show 0 bytes.
+<br>
+&nbsp;
+<h2>Lyrics Tab</h2>
+Only the lyrics tag of the mp3 will be removed.
+<h2>Picture Tab</h2>
+<p>
+Each mp3 can have more than one picture, of a particular
+specified Picture Type and Picture Description. The default
+Picture Type used is "Other". <b>Remove
+Tags</b> will remove all the
+pictures the mp3 contains and not just currently displayed
+picture.<br>
+</p>
+<p>To remove the picture associated with only one Picture
+Type, use the <b>Remove Picture</b>
+Button on the Picture tab page.</p>
+</body>
+</html>

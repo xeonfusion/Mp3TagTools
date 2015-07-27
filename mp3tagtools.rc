@@ -105,7 +105,7 @@ STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "About Mp3 Tag Tools"
 FONT 8, "MS Sans Serif", 0, 0, 0x0
 BEGIN
-    LTEXT           "E-Mail: xeonfusion@users.sourceforge.net",IDC_STATICURL_EMAIL,93,42,134,8
+    LTEXT           "E-Mail: xeonfusion@yahoo.com",IDC_STATICURL_EMAIL,93,42,134,8
     LTEXT           "http://sourceforge.net/projects/massid3lib",IDC_STATICURL_PROJECTPAGE,93,75,134,8
     LTEXT           "http://sourceforge.net/projects/massid3lib",IDC_STATIC,93,103,155,8
     LTEXT           "http://sourceforge.net/project/?group_id=979",IDC_STATICURL_ID3LIB,93,121,146,8
@@ -905,7 +905,7 @@ BEGIN
     IDC_STATICURL_PROJECTPAGE "http://sourceforge.net/projects/massid3lib"
     IDC_STATICURL_HOME      "http://massid3lib.sourceforge.net"
     IDC_STATICURL_ID3LIB    "http://sourceforge.net/project/?group_id=979"
-    IDC_STATICURL_EMAIL     "mailto:xeonfusion@users.sourceforge.net"
+    IDC_STATICURL_EMAIL     "mailto:xeonfusion@yahoo.com"
     IDS_CASESYMBOLS         "()[]{}0123456789.~`!@#$%^&*-_+=|\\:;""<>,?/"
     IDS_DELIMITERS          "()[]{} .~`!@#$%^&*-_+=|\\:;""<>,?/"
     IDS_LOWERCASEWORDS      "and,aka,vs,feat"

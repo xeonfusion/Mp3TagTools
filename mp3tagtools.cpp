@@ -1,5 +1,5 @@
 /*  Mp3 Tag Tools v 1.2
-    Copyright (C) 2001-2015 John George K., xeonfusion@users.sourceforge.net
+    Copyright (C) 2001-2015 John George K., xeonfusion@yahoo.com
 	
     This program is free software, All Rights Reserved;
 

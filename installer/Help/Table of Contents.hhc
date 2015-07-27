@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Overview">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Introduction">
+			<param name="Local" value="HTML files\Introduction.html">
+			<param name="URL" value="HTML files\Introduction.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Features">
+			<param name="Local" value="HTML files\Features.html">
+			<param name="URL" value="HTML files\Features.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Requirements">
+			<param name="Local" value="HTML%20files/Requirements.html">
+			<param name="URL" value="HTML files\Requirements.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Thanks">
+			<param name="Local" value="HTML%20files/Thanks.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Using Mp3 Tag Tools">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Open a Folder or Directory">
+			<param name="Local" value="HTML%20files/Open_a_Folder_or_Directory.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Refresh List">
+			<param name="Local" value="HTML%20files/Refresh_List.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Write Tags">
+			<param name="Local" value="HTML%20files/Write_Tags.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Rename Files">
+			<param name="Local" value="HTML%20files/Rename_Files.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Remove Tags">
+			<param name="Local" value="HTML%20files/Remove_Tags.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Clean Filenames">
+			<param name="Local" value="HTML%20files/Clean_Filenames.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Create Directory">
+			<param name="Local" value="HTML%20files/Create_Directory.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Copy Tags">
+			<param name="Local" value="HTML%20files/Copy_Tags.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Synchronize Tags">
+			<param name="Local" value="HTML%20files/Synchronize_Tags.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Export Tag Data">
+			<param name="Local" value="HTML%20files/Export_Tag_Data.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="View Allmusic.com information">
+			<param name="Local" value="HTML%20files/View_Allmusic_com_information.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Format Options">
+			<param name="Local" value="HTML%20files/Format_Options.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Create Filename Format">
+				<param name="Local" value="HTML%20files/FormatOptions_Create_Filename_Format.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Store Filename Format">
+				<param name="Local" value="HTML%20files/FormatOptions_Store_Filename_Format.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Additional Custom File Rename Options">
+				<param name="Local" value="HTML%20files/FormatOptions_Additional_Custom_File_Rename_Options.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Program Preferences">
+			<param name="Local" value="HTML%20files/Program_Preferences.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Tips&amp;Tricks">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Tips &amp; Tricks">
+			<param name="Local" value="HTML%20files/Tips_Tricks.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="More Information">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="More Information">
+			<param name="Local" value="HTML%20files/More_Information.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Updates, Bug Reports, Source Code">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Updates, Bug Reports, Source Code">
+			<param name="Local" value="HTML%20files/Updates_Bug%20Reports.html">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

@@ -1,5 +1,5 @@
 // PrefsID3V1ExportPage.cpp : implementation file
-//Copyright (C) 2001-2015 John George K., xeonfusion@users.sourceforge.net
+//Copyright (C) 2001-2015 John George K., xeonfusion@yahoo.com
 
 #include "stdafx.h"
 #include "mp3tagtools.h"

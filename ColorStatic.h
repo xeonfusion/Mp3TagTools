@@ -1,5 +1,5 @@
 /*  CColorStatic class for displaying a RGB color in a static control
-    Copyright (C) 2001-2015 John George K., xeonfusion@users.sourceforge.net
+    Copyright (C) 2001-2015 John George K., xeonfusion@yahoo.com
 	
     This program is free software; you can redistribute it and/or
     modify it under the terms of the GNU General Public License

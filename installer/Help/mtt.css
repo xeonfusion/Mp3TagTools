@@ -1,0 +1,24 @@
+BODY {font-family: Verdana, Arial, Helvetica, sans-serif;  font-size: 71%}
+
+P {text-align: left; margin-top : 6.00pt; margin-bottom : 0.00pt;}
+
+H1 { text-align: left;
+ font-size: 175%; font-weight: bold; 
+border-bottom-color: navy; border-bottom-style: inset; border-bottom-width: thin;
+color: navy;
+margin-bottom: 9.00pt; margin-top: 6.00pt;}
+
+H2 { text-align:left;
+font-size:150%;   font-weight:bold;   font-style : italic;
+margin-top:6.00pt;   margin-bottom:9.00pt;  }
+
+H3 {text-align: left;
+font-size:125%; font-weight:bold;
+margin-top:6.00pt; margin-bottom:2.00pt;}
+
+LI {text-align: left;
+margin-top:6.00pt; margin-bottom:0pt;}
+
+TD.c5 {vertical-align: top;   text-align: center;   background-color: rgb(255, 255, 255); font-weight: bold; font-size:71%;}
+
+TH.c4 {vertical-align: top;   text-align: center;   background-color: rgb(132, 205, 249); font-weight: bold;   font-size:71%; }

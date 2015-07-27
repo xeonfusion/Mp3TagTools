@@ -38,8 +38,8 @@ Section "Program with Help File (required)"
   ; Set output path to the installation directory.
   SetOutPath $INSTDIR
   ; Put file there
-  File "F:\IDtagprogram\MTTv1.2.008 installer\mp3tagtools.exe"
-  File "F:\IDtagprogram\MTTv1.2.008 installer\mtthelp.chm"	
+  File "C:\Users\John\Documents\Programming\mtt-v1.2.010\mp3tagtools.exe"
+  File "C:\Users\John\Documents\Programming\mtt-v1.2.010\mtthelp.chm"	
   ; Write the installation path into the registry
   WriteRegStr HKLM SOFTWARE\mtt12 "Install_Dir" "$INSTDIR"
   ; Write the uninstall keys for Windows
@@ -59,7 +59,7 @@ SectionEnd
 
 Section "Desktop Shortcut"
 SetShellVarContext all
-CreateShortCut "$DESKTOP\Mp3 Tag Tools v1.2.008.lnk" "$INSTDIR\mp3tagtools.exe" "" "$INSTDIR\mp3tagtools.exe" 0 
+CreateShortCut "$DESKTOP\Mp3 Tag Tools v1.2.010.lnk" "$INSTDIR\mp3tagtools.exe" "" "$INSTDIR\mp3tagtools.exe" 0 
 SectionEnd
 
 ; uninstall stuff
@@ -80,7 +80,7 @@ SetShellVarContext all
   Delete $INSTDIR\uninstall.exe
   ; remove shortcuts, if any.
   Delete "$SMPROGRAMS\Mp3 Tag Tools v1.2\*.*"
-  Delete "$DESKTOP\Mp3 Tag Tools v1.2.008.lnk"
+  Delete "$DESKTOP\Mp3 Tag Tools v1.2.010.lnk"
   ; remove directories used.
   RMDir "$SMPROGRAMS\Mp3 Tag Tools v1.2"
   RMDir "$INSTDIR"

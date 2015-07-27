@@ -5,7 +5,7 @@
 #pragma once
 #endif // _MSC_VER > 1000
 // PrefsID3V1ExportPage.h : header file
-//Copyright (C) 2001-2015 John George K., xeonfusion@users.sourceforge.net
+//Copyright (C) 2001-2015 John George K., xeonfusion@yahoo.com
 #include "SAPrefsSubDlg.h"
 /////////////////////////////////////////////////////////////////////////////
 // CPrefsID3V1ExportPage dialog
