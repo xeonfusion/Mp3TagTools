@@ -226,11 +226,20 @@ BOOL CMp3tagtoolsDlg::OnInitDialog()
 	free((void*) theApp->m_pszProfileName);
 	//Change the name of the .INI file.
 	//The CWinApp destructor will free the memory.
-	CString temp1 = theApp->m_pszHelpFilePath;
+	/*CString temp1 = theApp->m_pszHelpFilePath;
 	char ch = 0x5C;
 	int pos = temp1.ReverseFind(ch);
 	CString temp2 = temp1.Left(pos+1) + "mtt.ini";
-	theApp->m_pszProfileName=_tcsdup(LPCTSTR(temp2));
+	theApp->m_pszProfileName=_tcsdup(LPCTSTR(temp2));*/
+	
+	//Get AppData Folder for Vista compatibility
+	TCHAR szPath[MAX_PATH];
+	SHGetFolderPath(NULL, CSIDL_LOCAL_APPDATA | CSIDL_FLAG_CREATE, NULL, 0, szPath);
+	PathAppend(szPath, TEXT("\\Mp3TagToolsv1.2"));
+	CreateDirectory(szPath,0);
+	PathAppend(szPath, TEXT("\\mtt.ini"));
+	theApp->m_pszProfileName = _tcsdup(LPCTSTR(szPath));
+
 
 	// Setup the tab control
     TC_ITEM TabCtrlItem;

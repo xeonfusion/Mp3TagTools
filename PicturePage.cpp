@@ -200,7 +200,7 @@ void CPicturePage::ShowPicture()
 		m_picdescription = pstr;
 		if (pstr != NULL) ID3_FreeString(pstr);
 		
-		CWinApp* theApp = AfxGetApp();
+		/*CWinApp* theApp = AfxGetApp();
 		CString temp = theApp->m_pszHelpFilePath;
 		
 		char ch = 0x5C;
@@ -211,6 +211,17 @@ void CPicturePage::ShowPicture()
 		temp4.Replace("image/", "");
 		CString temp3 = "tmppicfile." + temp4;
 
+		m_picfilepath = temp2 + temp3;*/
+
+		//Get AppData Folder for Vista compatibility
+		TCHAR szPath[MAX_PATH];
+		SHGetFolderPath(NULL, CSIDL_LOCAL_APPDATA | CSIDL_FLAG_CREATE, NULL, 0, szPath);
+		PathAppend(szPath, TEXT("\\Mp3TagToolsv1.2"));
+		CreateDirectory(szPath, 0);
+		CString temp2(szPath);
+		CString temp4 = m_mimetype;
+		temp4.Replace("image/", "");
+		CString temp3 = "\\tmppicfile." + temp4;
 		m_picfilepath = temp2 + temp3;
 				
 		int datasize = ID3_GetPictureDataOfPicType(pTag, LPCTSTR(m_picfilepath), (ID3_PictureType)pictype);
